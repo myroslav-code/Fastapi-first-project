@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Добро пожаловать в этот проклятый город</h1>
+    <p>Здесь всё работает на FastAPI.</p>
+    <h1>Счетчик улик: {{ result }}</h1>
+    <form action ="/increment" method ="post">
+        <button type="submit">Добавить улику</button>
+    </form>
+</body>
+</html>
