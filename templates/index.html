@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Добро пожаловать</h1>
+    <p>Здесь всё работает на FastAPI.</p>
+    <form action="/find" method="post">
+        <input type="text" name="fruit_id" maxlength="1" placeholder="Введите ID фрукта">
+        <button type="submit">Найти</button>
+    </form>
+    {% if search_result %}
+    <h2>Результат: {{ search_result }}</h2>
+    {% endif %}
+</body>
+</html>
